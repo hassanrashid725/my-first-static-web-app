@@ -13,7 +13,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": "de",
         "locales": {
           "de": "messages.de.xlf"
         }
