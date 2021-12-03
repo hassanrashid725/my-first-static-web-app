@@ -15,7 +15,7 @@
       "i18n": {
         "sourceLocale": "de",
         "locales": {
-          "de": "messages.de.xlf"
+          "en": "messages.xlf"
         }
       },
       "architect": {
