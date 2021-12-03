@@ -12,6 +12,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "de": "messages.de.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,6 +33,9 @@
             "scripts": []
           },
           "configurations": {
+            "de": {
+              "localize": ["de"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -62,6 +71,9 @@
             "browserTarget": "angular-basic:build"
           },
           "configurations": {
+            "de": {
+              "browserTarget": "angular-basic:build:de"
+            },
             "production": {
               "browserTarget": "angular-basic:build:production"
             }
