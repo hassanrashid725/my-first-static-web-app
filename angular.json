@@ -13,9 +13,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "de",
+        "sourceLocale": "en-US",
         "locales": {
-          "en": "messages.xlf"
+          "de": "messages.de.xlf"
         }
       },
       "architect": {
