@@ -23,13 +23,13 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angular-basic",
-            "index": "de/src/index.html",
-            "main": "de/src/main.ts",
-            "polyfills": "de/src/polyfills.ts",
+            "index": "../src/index.html",
+            "main": "../src/main.ts",
+            "polyfills": "../src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["de/src/favicon.ico", "de/src/assets"],
-            "styles": ["de/src/styles.css"],
+            "assets": ["../src/favicon.ico", "../src/assets"],
+            "styles": ["../src/styles.css"],
             "scripts": []
           },
           "configurations": {
