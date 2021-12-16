@@ -75,7 +75,7 @@
               "browserTarget": "angular-basic:build:de"
             },
             "production": {
-              "browserTarget": "angular-basic:build:production"
+              "browserTarget": "angular-basic:build:de"
             }
           }
         },
