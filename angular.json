@@ -17,6 +17,9 @@
         "locales": {
           "de": {
             "translation": "messages.de.xlf"
+          },
+          "en": {
+            "translation": "messages.xlf"
           }
         }
       },
@@ -24,7 +27,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-basic",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -35,8 +38,40 @@
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "aot": true,
+              "baseHref": "en",
+              "outputPath": "dist/en",
+              "i18nFile": "messages.xlf",
+              "i18nLocale": "en"
+            },
             "de": {
-              "localize": ["de"]
+              "aot": true,
+              "baseHref": "de",
+              "outputPath": "dist/de",
+              "i18nFile": "messages.de.xlf",
+              "i18nLocale": "de"
+            },
+            "production-de": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "baseHref": "de",
+              "outputPath": "dist/de",
+              "i18nFile": "messages.de.xlf",
+              "i18nLocale": "de"
             },
             "production": {
               "fileReplacements": [
@@ -73,6 +108,9 @@
             "browserTarget": "angular-basic:build"
           },
           "configurations": {
+            "en": {
+              "browserTarget": "angular-basic:build:en"
+            },
             "de": {
               "browserTarget": "angular-basic:build:de"
             },
